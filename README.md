@@ -1,4 +1,4 @@
-# KHANTravelsApp
+# KHANTravels App
 
 Proj Name: Khan Travels
 Type: Website - Multi-Device Support
