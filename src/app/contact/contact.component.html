@@ -1,0 +1,30 @@
+<section id="contacts-sec">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+          <h1 class="page-header">Contact Us</h1>
+        </div>
+        <div class="col-md-4 col-sm-4" *ngFor="let contact of contacts">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h4 class="adjst text-uppercase">{{contact.firstname}} {{contact.lastname}} 
+              </h4>              
+              <p>
+                <span class="fa fa-phone-square"></span>
+                <span class="text-muted">{{contact.phone}}</span>
+              </p>
+              <p><span class="fa fa-envelope"></span>
+                <span class="text-muted">{{contact.email}}</span>
+              </p>
+              <p><span class="fa fa-rss"></span>
+                <span class="text-muted">{{contact.bloodGroup}}</span>
+              </p> 
+              <p><span class="label label-info pull-right">{{ contact.contactType }}</span></p>             
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <br />
+</section>
+<!--END HOME SECTION-->

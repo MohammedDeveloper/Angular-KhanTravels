@@ -1,0 +1,25 @@
+<section id="packages-sec">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="page-header">Packages</h1>
+      </div>
+      <div class="col-md-4 col-sm-4" *ngFor="let package of packages">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h4 class="adjst">{{ package.name }}</h4>
+            <p [innerHTML]="package.description">
+            </p>
+            <span *ngIf="package?.info" class="label label-warning">{{ package.info }}</span>
+            <span class="label label-info" *ngIf="package?.cost">Cost: <span class="fa fa-inr"></span> {{ package.cost }}</span>
+          </div>
+        </div>
+      </div>
+      <!--<div class="col-lg-12 break-word">
+        <p>
+          <span class="badge">*Please contact us to know about the yearly  or half-yearly package disccounts</span>
+        </p>
+      </div>-->
+    </div>
+  </div>
+</section>
